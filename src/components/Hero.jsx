@@ -44,9 +44,9 @@ export default function Hero() {
         
         {/* Text Content Column */}
         <div className="max-w-xl lg:max-w-2xl my-auto text-left">
-          {/* Overline / Subtitle - Restored exact original typography, single line on mobile */}
-          <p className="text-[10px] xs:text-[11px] sm:text-[13px] md:text-sm font-normal tracking-[0.28em] text-[#7b819a] uppercase mb-4 sm:mb-5 whitespace-nowrap">
-            C O N S U L T O R Í A &nbsp; O R G A N I Z A C I O N A L
+          {/* Overline / Subtitle - High Relevancy Local SEO */}
+          <p className="text-[10px] xs:text-[11px] sm:text-[12.5px] md:text-sm font-medium tracking-[0.22em] text-[#6b718f] uppercase mb-4 sm:mb-5 whitespace-nowrap">
+            CONSULTORA DE RECURSOS HUMANOS · PUERTO MONTT
           </p>
 
           {/* Main Heading */}
@@ -59,10 +59,20 @@ export default function Hero() {
             </span>
           </h1>
 
-          {/* Description Paragraph - Italic / Cursive and contained to the left on mobile */}
-          <p className="italic font-light text-[#333b4e] md:text-[#596179] text-[15px] sm:text-base lg:text-[18px] leading-relaxed mb-8 max-w-[260px] xs:max-w-[295px] sm:max-w-md text-left mr-auto">
-            Acompañamos organizaciones en su desarrollo, con soluciones simples y sostenibles.
+          {/* Description Paragraph - SEO optimized with natural high-conversion copy */}
+          <p className="italic font-light text-[#333b4e] md:text-[#596179] text-[15px] sm:text-base lg:text-[18px] leading-relaxed mb-5 max-w-[280px] xs:max-w-[340px] sm:max-w-xl text-left mr-auto">
+            Consultoría de Recursos Humanos y RRHH en Puerto Montt y la Región de Los Lagos. Reclutamiento y selección de personal estratégico, desarrollo de líderes y soluciones sostenibles para organizaciones que crecen.
           </p>
+
+          {/* Local Authority Keyword Badges */}
+          <div className="flex flex-wrap items-center gap-2 mb-7">
+            <span className="inline-flex items-center text-[11px] sm:text-xs font-semibold px-3 py-1 rounded-full bg-[#fbf5fc] text-[#704285] border border-[#ebd2f4]">
+              Reclutamiento y Selección en Puerto Montt
+            </span>
+            <span className="inline-flex items-center text-[11px] sm:text-xs font-semibold px-3 py-1 rounded-full bg-[#f8f9fc] text-[#444d68] border border-[#e2e7f3]">
+              Consultora RRHH · Industria Acuícola & Los Lagos
+            </span>
+          </div>
 
           {/* CTA Button */}
           <div>

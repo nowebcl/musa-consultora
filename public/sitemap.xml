@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- Página Principal - Consultora de Recursos Humanos en Puerto Montt -->
+  <url>
+    <loc>https://www.musaconsultora.cl/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Reclutamiento y Selección de Personal en Puerto Montt -->
+  <url>
+    <loc>https://www.musaconsultora.cl/servicios/headhunting-evaluaciones</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Quiénes Somos / Historia y Liderazgo RRHH -->
+  <url>
+    <loc>https://www.musaconsultora.cl/quienes-somos</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Gerencia de Personas Fraccional (HR as a Service) en Puerto Montt -->
+  <url>
+    <loc>https://www.musaconsultora.cl/servicios/gerencia-fraccional</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Relaciones Laborales y Asesoría Legal (Ley Karin) en Los Lagos -->
+  <url>
+    <loc>https://www.musaconsultora.cl/servicios/relaciones-laborales-asesoria</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Gestión Organizacional y Desarrollo de Liderazgo -->
+  <url>
+    <loc>https://www.musaconsultora.cl/servicios/gestion-organizacional-liderazgo</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Certificaciones y Acreditación Laboral (F30, F30-1) -->
+  <url>
+    <loc>https://www.musaconsultora.cl/servicios/certificaciones-laborales</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Posicionamiento Profesional y Outplacement -->
+  <url>
+    <loc>https://www.musaconsultora.cl/servicios/posicionamiento-profesional</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+</urlset>

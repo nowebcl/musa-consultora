@@ -28,3 +28,6 @@ dist-ssr
 
 # Raw high-res photos
 public/fotos
+
+.vercel
+.env*

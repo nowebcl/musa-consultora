@@ -21,12 +21,12 @@ export default function Footer() {
               />
             </Link>
             <p className="text-slate-300 text-sm leading-relaxed max-w-sm font-light">
-              Conectar personas, liderazgo y estrategia, para construir organizaciones más sólidas, eficientes y sostenibles.
+              Consultora de Recursos Humanos en Puerto Montt y Región de Los Lagos. Especialistas en reclutamiento y selección de personal, headhunting y gestión estratégica de RRHH.
             </p>
             
             <div className="mt-6 flex items-center gap-2.5 text-xs text-slate-400">
               <MapPin className="w-4 h-4 text-[#cca5d8]" />
-              <span>Chile (Cobertura Nacional)</span>
+              <span>Puerto Montt, Región de Los Lagos · Cobertura Nacional</span>
             </div>
           </div>
 

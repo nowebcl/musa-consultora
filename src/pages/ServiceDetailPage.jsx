@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { servicesData } from '../data/servicesData'
 import { ArrowLeft, ArrowRight, CheckCircle2, PackageCheck, HelpCircle, Layers, Award } from 'lucide-react'
@@ -6,6 +6,12 @@ import { ArrowLeft, ArrowRight, CheckCircle2, PackageCheck, HelpCircle, Layers, 
 export default function ServiceDetailPage() {
   const { slug } = useParams()
   const service = servicesData.find((s) => s.slug === slug)
+
+  useEffect(() => {
+    if (service) {
+      document.title = `${service.title} | Consultora RRHH Puerto Montt · MUSA`
+    }
+  }, [service])
 
   if (!service) {
     return <Navigate to="/" replace />

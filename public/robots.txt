@@ -1,0 +1,7 @@
+# Robots.txt para MUSA Consultora Organizacional
+# Consultora de Recursos Humanos en Puerto Montt · Reclutamiento y Selección de Personal RRHH
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.musaconsultora.cl/sitemap.xml

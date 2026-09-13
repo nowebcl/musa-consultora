@@ -93,10 +93,10 @@ export default function Contact() {
                         UBICACIÓN & COBERTURA
                       </p>
                       <p className="text-base font-bold text-[#161c2d]">
-                        Chile (Cobertura Nacional)
+                        Puerto Montt, Región de Los Lagos
                       </p>
                       <p className="text-xs text-[#64748b] mt-0.5 font-light">
-                        Consultoría estratégica y despliegue en todo el país.
+                        Atención presencial en Puerto Montt y cobertura estratégica en todo Chile.
                       </p>
                     </div>
                   </div>

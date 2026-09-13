@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft, ArrowRight, CheckCircle2, Award, Users, Target, ShieldCheck, Briefcase } from 'lucide-react'
 
 export default function AboutPage() {
+  useEffect(() => {
+    document.title = 'Quiénes Somos | Consultora de Recursos Humanos en Puerto Montt · MUSA'
+  }, [])
+
   const sectors = [
     'Acuicultura',
     'Minería',
