@@ -10,10 +10,28 @@ export default function Contact() {
     mensaje: ''
   })
   const [submitted, setSubmitted] = useState(false)
+  const [whatsappUrl, setWhatsappUrl] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    
+    const messageLines = [
+      '👋 *Solicitud de Reunión de Diagnóstico - MUSA Consultora*',
+      '',
+      `👤 *Nombre:* ${formData.nombre.trim()}`,
+      `📧 *Email:* ${formData.email.trim()}`,
+      formData.empresa.trim() ? `🏢 *Empresa:* ${formData.empresa.trim()}` : null,
+      formData.telefono.trim() ? `📞 *Teléfono:* ${formData.telefono.trim()}` : null,
+      `💬 *Desafío / Mensaje:* ${formData.mensaje.trim()}`
+    ].filter(Boolean)
+
+    const fullMessage = messageLines.join('\n')
+    const url = `https://wa.me/56976086896?text=${encodeURIComponent(fullMessage)}`
+    setWhatsappUrl(url)
     setSubmitted(true)
+    
+    // Abrir WhatsApp en pestaña nueva
+    window.open(url, '_blank')
   }
 
   return (
@@ -184,12 +202,36 @@ export default function Contact() {
               </h3>
 
               {submitted ? (
-                <div className="bg-white rounded-2xl p-8 text-center border border-green-100 shadow-sm space-y-4">
-                  <CheckCircle className="w-12 h-12 text-emerald-500 mx-auto" />
-                  <h4 className="text-xl font-bold text-[#161c2d]">¡Mensaje recibido con éxito!</h4>
-                  <p className="text-sm text-[#596179]">
-                    Gracias por escribirnos. Nuestro equipo revisará tus antecedentes y coordinará la reunión de diagnóstico a la brevedad.
-                  </p>
+                <div className="bg-white rounded-2xl p-8 sm:p-10 text-center border border-[#ebd2f4] shadow-sm space-y-5">
+                  <div className="w-14 h-14 rounded-full bg-[#fbf5fc] border border-[#ecd4f4] text-[#9c6bb0] flex items-center justify-center mx-auto">
+                    <CheckCircle className="w-7 h-7" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl sm:text-2xl font-bold text-[#161c2d]">¡Solicitud lista para enviar!</h4>
+                    <p className="text-sm text-[#596179] mt-2 leading-relaxed max-w-md mx-auto">
+                      Se ha generado tu solicitud de reunión de diagnóstico. Si WhatsApp no se abrió automáticamente en tu navegador o celular, haz clic en el botón a continuación:
+                    </p>
+                  </div>
+                  <div>
+                    <a
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2.5 bg-[#8067b0] hover:bg-[#70569e] text-white text-base font-medium px-8 py-4 rounded-xl shadow-md shadow-[#8067b0]/25 transition-all duration-200"
+                    >
+                      <MessageSquare className="w-4 h-4" />
+                      <span>Abrir WhatsApp con tu mensaje</span>
+                    </a>
+                  </div>
+                  <div className="pt-2">
+                    <button
+                      type="button"
+                      onClick={() => setSubmitted(false)}
+                      className="text-xs text-[#8b91a5] hover:text-[#161c2d] underline transition-colors"
+                    >
+                      Modificar datos o enviar otro mensaje
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">

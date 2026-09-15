@@ -7,7 +7,7 @@ export default function Methodology() {
       number: '01',
       category: 'Selección estratégica',
       title: 'CAUTIVAR',
-      description: 'Atraemos y seleccionamos el talento adecuado mediante búsqueda directa y Evaluación Tridimensional®, evaluando competencias, jefatura y fit cultural.',
+      description: 'Atraemos y seleccionamos el talento mediante búsqueda directa y Evaluación Tridimensional®. Evaluamos el perfil de los candidatos/as: no solo decimos "califica", explicamos cómo puede aportar valor al negocio.',
       icon: (
         <svg className="w-10 h-10 text-[#9c6bb0] stroke-[1.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="10" cy="10" r="7" />

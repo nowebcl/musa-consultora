@@ -40,37 +40,37 @@ export default function Hero() {
       <div className="absolute bottom-0 inset-x-0 h-36 sm:h-48 lg:h-64 bg-gradient-to-t from-[#fcfbfe] via-[#fcfbfe]/70 to-transparent pointer-events-none z-[5]" />
 
       {/* Main Container */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full py-8 sm:py-12 md:py-14 lg:py-16 flex flex-col justify-between min-h-[calc(100vh-100px)]">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-8 sm:py-12 md:py-14 lg:py-16 flex flex-col justify-between min-h-[calc(100vh-100px)]">
         
         {/* Text Content Column */}
-        <div className="max-w-xl lg:max-w-2xl my-auto text-left">
-          {/* Overline / Subtitle - High Relevancy Local SEO */}
-          <p className="text-[10px] xs:text-[11px] sm:text-[12.5px] md:text-sm font-medium tracking-[0.22em] text-[#6b718f] uppercase mb-4 sm:mb-5 whitespace-nowrap">
-            CONSULTORA DE RECURSOS HUMANOS · PUERTO MONTT
+        <div className="max-w-lg lg:max-w-xl my-auto text-left">
+          {/* Overline / Subtitle - Tipografía original exacta */}
+          <p className="text-[10px] xs:text-[11px] sm:text-[13px] md:text-sm font-normal tracking-[0.28em] text-[#7b819a] uppercase mb-3.5 sm:mb-5 whitespace-nowrap">
+            C O N S U L T O R Í A &nbsp; O R G A N I Z A C I O N A L
           </p>
 
-          {/* Main Heading */}
-          <h1 className="text-[34px] sm:text-[46px] lg:text-[66px] font-normal tracking-[-0.025em] leading-[1.14] mb-5 sm:mb-6">
+          {/* Main Heading - Más pequeño en PC para ajustarse al canvas */}
+          <h1 className="text-[24px] xs:text-[27px] sm:text-[34px] md:text-[38px] lg:text-[46px] xl:text-[50px] font-normal tracking-[-0.025em] leading-[1.16] mb-3.5 sm:mb-5">
             <span className="block text-[#1d2331] font-medium">
-              Personas que
+              Transformamos el talento
             </span>
             <span className="block text-[#7075a1] font-medium">
-              impulsan cambio
+              en una ventaja competitiva
             </span>
           </h1>
 
           {/* Description Paragraph - SEO optimized with natural high-conversion copy */}
-          <p className="italic font-light text-[#333b4e] md:text-[#596179] text-[15px] sm:text-base lg:text-[18px] leading-relaxed mb-5 max-w-[280px] xs:max-w-[340px] sm:max-w-xl text-left mr-auto">
-            Consultoría de Recursos Humanos y RRHH en Puerto Montt y la Región de Los Lagos. Reclutamiento y selección de personal estratégico, desarrollo de líderes y soluciones sostenibles para organizaciones que crecen.
+          <p className="italic font-light text-[#333b4e] md:text-[#596179] text-[13px] xs:text-[13.5px] sm:text-[15px] lg:text-[16.5px] leading-relaxed mb-4 sm:mb-6 max-w-sm sm:max-w-md text-left mr-auto">
+            Consultoría de Recursos Humanos en Puerto Montt y la Región de Los Lagos con alcance nacional.
           </p>
 
           {/* Local Authority Keyword Badges */}
-          <div className="flex flex-wrap items-center gap-2 mb-7">
-            <span className="inline-flex items-center text-[11px] sm:text-xs font-semibold px-3 py-1 rounded-full bg-[#fbf5fc] text-[#704285] border border-[#ebd2f4]">
+          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-5 sm:mb-7">
+            <span className="inline-flex items-center text-[10px] sm:text-xs font-semibold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-[#fbf5fc] text-[#704285] border border-[#ebd2f4]">
               Reclutamiento y Selección en Puerto Montt
             </span>
-            <span className="inline-flex items-center text-[11px] sm:text-xs font-semibold px-3 py-1 rounded-full bg-[#f8f9fc] text-[#444d68] border border-[#e2e7f3]">
-              Consultora RRHH · Industria Acuícola & Los Lagos
+            <span className="inline-flex items-center text-[10px] sm:text-xs font-semibold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-[#f8f9fc] text-[#444d68] border border-[#e2e7f3]">
+              Consultora RRHH · Cobertura Nacional & Los Lagos
             </span>
           </div>
 
@@ -78,16 +78,16 @@ export default function Hero() {
           <div>
             <a
               href="#servicios"
-              className="inline-flex items-center gap-3 bg-[#6b719b] hover:bg-[#5b618a] text-white text-[15px] sm:text-base font-normal px-7 py-3.5 rounded-full shadow-md shadow-[#6b719b]/25 hover:shadow-lg hover:shadow-[#6b719b]/35 hover:translate-x-0.5 transition-all duration-200"
+              className="inline-flex items-center gap-2.5 sm:gap-3 bg-[#6b719b] hover:bg-[#5b618a] text-white text-[13.5px] sm:text-base font-normal px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-full shadow-md shadow-[#6b719b]/25 hover:shadow-lg hover:shadow-[#6b719b]/35 hover:translate-x-0.5 transition-all duration-200"
             >
               <span>Conoce nuestros servicios</span>
-              <ArrowRight className="w-4 h-4 stroke-[2]" />
+              <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[2]" />
             </a>
           </div>
         </div>
 
         {/* Bottom Tagline / Accent */}
-        <div className="pt-10 sm:pt-14">
+        <div className="pt-6 sm:pt-14">
           <div className="w-8 h-[2px] bg-[#9ba1b7] mb-3" />
           <p className="text-[11px] sm:text-[12px] font-normal tracking-[0.2em] text-[#848aa2] uppercase leading-relaxed">
             Organizaciones más humanas

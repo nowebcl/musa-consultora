@@ -8,7 +8,6 @@ export default function Testimonials() {
       quote: 'MUSA nos ayudó a ordenar la gestión de Personas con una mirada estratégica y muy cercana al negocio.',
       name: 'Carolina Muñoz',
       role: 'Gerente de Personas',
-      avatar: '/testi-carolina.jpg',
       featured: false,
     },
     {
@@ -16,7 +15,6 @@ export default function Testimonials() {
       quote: 'La metodología de MUSA nos permitió tomar mejores decisiones de talento y fortalecer a nuestros líderes.',
       name: 'Rodrigo Pérez',
       role: 'Gerente General',
-      avatar: '/testi-rodrigo.jpg',
       featured: true,
     },
     {
@@ -24,7 +22,6 @@ export default function Testimonials() {
       quote: 'Valoramos su capacidad para traducir desafíos organizacionales en acciones concretas y sostenibles.',
       name: 'Daniela Rojas',
       role: 'Subgerente de Desarrollo Organizacional',
-      avatar: '/testi-daniela.jpg',
       featured: false,
     },
     {
@@ -32,7 +29,6 @@ export default function Testimonials() {
       quote: 'El acompañamiento de MUSA fue clave para potenciar las capacidades de nuestros equipos ejecutivos.',
       name: 'Gabriel Soto',
       role: 'Director de Operaciones',
-      avatar: '/service-org.jpg',
       featured: false,
     },
     {
@@ -40,7 +36,6 @@ export default function Testimonials() {
       quote: 'Soluciones prácticas y aplicables desde el primer día con un entendimiento profundo del negocio.',
       name: 'Marcela Valenzuela',
       role: 'Gerente de Talento & Cultura',
-      avatar: '/about-founder.jpg',
       featured: false,
     },
     {
@@ -48,7 +43,6 @@ export default function Testimonials() {
       quote: 'La cercanía y el compromiso del equipo marcaron una diferencia real en nuestra transformación cultural.',
       name: 'Andrés Morales',
       role: 'VP de Recursos Humanos',
-      avatar: '/service-hr.jpg',
       featured: true,
     }
   ]
@@ -209,15 +203,21 @@ export default function Testimonials() {
                       </p>
                     </div>
 
-                    {/* Author Profile */}
+                    {/* Author Profile without photos */}
                     <div className="flex items-center gap-3.5 pt-6 mt-auto">
-                      <img
-                        src={item.avatar}
-                        alt={item.name}
-                        className={`w-12 h-12 rounded-full object-cover object-top flex-shrink-0 border-2 ${
-                          isCardFeatured ? 'border-white/40' : 'border-white shadow-sm'
+                      <div
+                        className={`w-11 h-11 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 tracking-wider ${
+                          isCardFeatured
+                            ? 'bg-white/20 text-white border border-white/30'
+                            : 'bg-[#f6eff9] text-[#704285] border border-[#ebd2f4]'
                         }`}
-                      />
+                      >
+                        {item.name
+                          .split(' ')
+                          .map((n) => n[0])
+                          .slice(0, 2)
+                          .join('')}
+                      </div>
                       <div>
                         <h3
                           className={`text-[15px] sm:text-base font-bold leading-tight ${

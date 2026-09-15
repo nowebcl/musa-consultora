@@ -8,20 +8,20 @@ export default function AboutPage() {
   }, [])
 
   const sectors = [
-    'Acuicultura',
-    'Minería',
-    'Automotriz',
-    'Inmobiliaria',
-    'Transportes',
-    'Empresas Productivas',
-    'Servicios'
+    'Empresas de Servicios',
+    'Corporativos y Casas Matrices',
+    'Acuicultura y Salmones',
+    'Minería e Industria',
+    'Automotriz y Transporte',
+    'Inmobiliaria y Construcción',
+    'Empresas Productivas'
   ]
 
   const pillars = [
     {
       title: 'Personas',
-      subtitle: 'Diagnóstico, alineamiento y cultura interna',
-      description: 'Entendemos a las personas como el motor insustituible del negocio. Evaluamos clima, potencial y dinámicas de equipo para asegurar coherencia cultural y compromiso.',
+      subtitle: 'Diagnóstico, alineamiento y valor al negocio',
+      description: 'Entendemos a las personas como el motor insustituible del negocio: evaluamos el perfil de los candidatos/as; no solo decimos "califica", explicamos cómo puede aportar valor al negocio. Evaluamos clima, potencial y dinámicas de equipo para asegurar coherencia cultural y compromiso.',
       icon: <Users className="w-6 h-6 text-[#9c6bb0]" />
     },
     {

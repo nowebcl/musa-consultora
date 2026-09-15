@@ -54,18 +54,18 @@ export default function ImpactAreas() {
   const metrics = [
     {
       percentage: '30%',
-      label: 'Temprana (< 6 meses)',
-      detail: 'Costo mínimo en rotación inicial'
+      label: 'Rotación Temprana (< 6 meses)',
+      detail: 'Piso mínimo de pérdida directa en inducción y reemplazo'
     },
     {
       percentage: '150%',
-      label: 'Mandos medios y técnicos',
-      detail: 'Pérdida en productividad'
+      label: 'Mandos Medios y Técnicos',
+      detail: 'Pérdida en productividad, tiempos de espera y curva de aprendizaje'
     },
     {
       percentage: '213%',
-      label: 'Líderes y ejecutivos',
-      detail: 'Impacto estratégico y know-how'
+      label: 'Líderes y Ejecutivos Senior',
+      detail: 'Impacto estratégico, fuga de know-how y desestabilización operativa'
     }
   ]
 
@@ -73,15 +73,21 @@ export default function ImpactAreas() {
     <section id="proyectos" className="relative py-10 sm:py-14 lg:py-16 bg-[#fafbfc]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         
-        {/* Header Compacto */}
-        <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
+        {/* Header Compacto con información de Slide 4 */}
+        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-[0.2em] text-[#9c6bb0] uppercase mb-2">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>ÁREAS DE IMPACTO</span>
+            <span>ÁREAS DE IMPACTO & RENTABILIDAD</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#161c2d] tracking-tight leading-tight">
             Transformamos desafíos en oportunidades
           </h2>
+          <p className="text-base sm:text-lg text-[#704285] font-semibold mt-2.5">
+            Cuando el talento no se gestiona, el negocio absorbe el costo.
+          </p>
+          <p className="text-xs sm:text-sm text-[#596179] font-light mt-1.5 max-w-2xl mx-auto leading-relaxed">
+            La rotación imprevista, la falta de gobernanza y las vacantes críticas impactan directamente en la última línea financiera y la continuidad de las operaciones.
+          </p>
         </div>
 
         {/* 2 FILAS EN MÓVIL Y ESCRITORIO CON CAMBIO AUTOMÁTICO */}
@@ -177,37 +183,52 @@ export default function ImpactAreas() {
 
         </div>
 
-        {/* Menuda Info: Barra compacta y ordenada de costo de rotación */}
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3.5 sm:p-5 border border-slate-100 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.05)]">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-4 mb-3 pb-2.5 border-b border-slate-100">
+        {/* Menuda Info: Barra compacta y ordenada de costo de rotación con datos del Slide 4 */}
+        <div className="bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-slate-100 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.05)]">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-4 mb-3.5 pb-3 border-b border-slate-100">
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[#9c6bb0]" />
-              <span className="text-xs font-semibold text-[#161c2d]">
-                Impacto de la rotación en el negocio
+              <span className="w-2.5 h-2.5 rounded-full bg-[#9c6bb0]" />
+              <span className="text-xs sm:text-sm font-bold text-[#161c2d]">
+                Cuando el talento no se gestiona, el negocio absorbe el costo
               </span>
             </div>
             <span className="text-[11px] text-[#64748b] font-light">
-              Fuente: SHRM Benchmark · % sobre salario anual
+              Fuente: SHRM Benchmark · % sobre salario anual del cargo
             </span>
           </div>
 
-          <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center sm:text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-left mb-4">
             {metrics.map((item, index) => (
               <div
                 key={index}
-                className="bg-[#faf7fc] rounded-lg sm:rounded-xl p-2 sm:p-3 border border-[#f0e4f5]/60 flex flex-col justify-center"
+                className="bg-[#faf7fc] rounded-lg sm:rounded-xl p-3 sm:p-4 border border-[#f0e4f5]/60 flex flex-col justify-center"
               >
-                <div className="text-lg sm:text-2xl font-extrabold text-[#704285] leading-none mb-1">
+                <div className="text-xl sm:text-2xl font-extrabold text-[#704285] leading-none mb-1">
                   {item.percentage}
                 </div>
-                <div className="text-[10px] sm:text-xs font-semibold text-[#161c2d] leading-tight truncate">
+                <div className="text-xs sm:text-[13px] font-semibold text-[#161c2d] leading-tight">
                   {item.label}
                 </div>
-                <div className="text-[9px] sm:text-[11px] text-[#64748b] font-light hidden sm:block mt-0.5">
+                <div className="text-[11px] sm:text-xs text-[#64748b] font-light mt-1 leading-snug">
                   {item.detail}
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Business Hidden Costs Summary from Slide 4 */}
+          <div className="bg-[#fcfbfe] rounded-xl p-3 sm:p-3.5 border border-[#ecd9f2]/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-[#555e75]">
+            <div className="flex items-center gap-2">
+              <span className="font-semibold text-[#161c2d]">Impacto directo en el negocio:</span>
+              <span>Fuga de conocimiento, reprocesos de contratación, sobrecarga en los equipos clave y contingencias normativas.</span>
+            </div>
+            <a
+              href="#contacto"
+              className="inline-flex items-center gap-1.5 font-semibold text-[#9c6bb0] hover:text-[#805096] whitespace-nowrap transition-colors"
+            >
+              <span>Agendar diagnóstico preventivo</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
         </div>
 

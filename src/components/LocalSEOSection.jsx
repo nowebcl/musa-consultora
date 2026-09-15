@@ -98,16 +98,16 @@ export default function LocalSEOSection() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
             <div className="lg:col-span-8 space-y-4">
               <span className="text-xs font-bold tracking-widest text-[#cca5d8] uppercase">
-                FOCO SECTORIAL EN EL SUR DE CHILE
+                FOCO SECTORIAL Y COBERTURA ESTRATÉGICA
               </span>
               <h3 className="text-2xl sm:text-3xl font-bold leading-tight">
-                Especialistas en la Industria Acuícola, Salmonera y Logística de Los Lagos
+                Especialistas en Industria Acuícola, Productiva, Empresas de Servicios y Corporativos
               </h3>
               <p className="text-slate-300 text-sm sm:text-base font-light leading-relaxed max-w-2xl">
-                Sabemos que la operación en Puerto Montt requiere velocidad, rigor y profesionales adaptados a la cultura local. Seleccionamos el talento adecuado para faenas, centros de cultivo, plantas de proceso y oficinas corporativas.
+                Acompañamos con igual solidez y rigor técnico tanto a faenas, plantas de proceso y operaciones logísticas como a empresas de servicios, firmas consultoras, comercio, banca y oficinas corporativas en Puerto Montt, Los Lagos y con alcance nacional. Adaptamos cada solución a la cultura y exigencias de cada sector.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
-                {['Acuicultura y Salmones', 'Logística y Marítimo', 'Automotriz y Transporte', 'Servicios Industriales', 'Construcción e Inmobiliaria'].map((tag, i) => (
+                {['Empresas de Servicios & Consultoría', 'Corporativos & Casas Matrices', 'Acuicultura y Salmones', 'Logística y Marítimo', 'Automotriz y Transporte', 'Banca, Comercio y Retail', 'Construcción e Inmobiliaria'].map((tag, i) => (
                   <span key={i} className="text-xs font-medium px-3.5 py-1.5 rounded-lg bg-white/10 text-slate-200 border border-white/10">
                     {tag}
                   </span>

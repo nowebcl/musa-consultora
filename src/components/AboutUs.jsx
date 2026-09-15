@@ -120,7 +120,7 @@ export default function AboutUs() {
 
             {/* Second Paragraph */}
             <p className="text-[#596179] text-base sm:text-[16px] leading-relaxed font-light pt-1">
-              Más de dos décadas liderando áreas de RR.HH. en empresas de alta complejidad (minería, acuicultura, automotriz, inmobiliaria, transportes, servicios). Trabajamos bajo un <strong className="font-semibold text-[#161c2d]">Enfoque Tridimensional®</strong>: Personas, Organización y Resultados.
+              Más de dos décadas liderando áreas de RR.HH. en empresas de alta complejidad (empresas de servicios, corporativos, acuicultura, minería, automotriz, inmobiliaria, transportes). Trabajamos bajo un <strong className="font-semibold text-[#161c2d]">Enfoque Tridimensional®</strong>: Personas, Organización y Resultados.
             </p>
 
             {/* Link to detail page */}
